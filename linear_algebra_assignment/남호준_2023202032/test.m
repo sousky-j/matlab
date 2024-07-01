@@ -1,5 +1,5 @@
 %계수 행렬 A와 벡터 b를 생성
-size=100;
+size=10;
 A = rand(size,size);%임의의 정사각 행렬로 만듬
 b = rand(size,1);%임의의 열 벡터로 만듬
 

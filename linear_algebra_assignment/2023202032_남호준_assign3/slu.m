@@ -3,7 +3,7 @@ function [L, U] = slu(A)
 tol = 1.e-6;%정밀도 설정(10의 -6제곱)
 [rows, cols] = size(A); % A의 크기 추출
 if(rows~=cols)%행과 열 크기가 다른 경우
-    error('this isnt square max_id_rowsatrix')
+    error('this isnt square matrix')
 end
 L=eye(cols);%L을 단위 행렬로 만듬
 U = zeros(cols);%U를 영행렬로 만듬

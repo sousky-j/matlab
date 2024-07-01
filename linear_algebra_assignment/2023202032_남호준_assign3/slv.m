@@ -16,7 +16,7 @@ end
  % Backward substitution
 t=0;
 for i = cols : -1 : 1 % x(n)에서부터 x(1)까지 역순으로 진행
-    for j = i+1:cols % Baci substitution
+    for j = i+1:cols % Back substitution
         t = t + U(i, j) * x(j); % U와 이후 x(j)를 곱해서 더함
     end
     x(i) = (a(i) - t)/ U(i, i); % 피벗으로 나눔
